@@ -1,83 +1,57 @@
 @extends('layouts.app')
-@section('title', 'News')
+@section('title', 'Blog')
 @section('content')
-
-    <div class="page-title-area">
+    <header class="innner-page">
         <div class="container">
-            <div class="page-title-content">
-                <h3>News</h3>
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active">
-                        News
-                    </li>
-                </ul>
-            </div>
+            <h1>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                Blog
+            </h1>
         </div>
-    </div>
+    </header>
 
-    <section class="blogs-area ptb-100">
+    <section class="konnect-news-inner" id="blog">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="row">
-                        @foreach ($news as $new)
-                            <div class="col-lg-12">
-                                <div class="single-blog-post">
-                                    <div class="blog-img">
-                                        <a href="{{ route('news.show', $new->id) }}">
-                                            <img src="{{ $new->photo }}" alt=""
-                                                class="img-responsive img-fullwidth"
-                                                style="width: 100%; height: 320px; background-size: center; object-fit: cover;">
-                                        </a>
-                                    </div>
-
-                                    <div class="blog-content">
-                                        <ul>
-                                            <li>
-                                                <i class="bx bxs-user"></i>
-                                                <a href="#">
-                                                    {{ $new->author ?? '' }}
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <h3>
-                                            <a href="{{ route('news.show', $new->id) }}">
-                                                {{ $new->title_eng ?? '' }}
-                                            </a>
-                                        </h3>
-
-                                        <p>
-                                            {{ Str::limit($new->description_eng, 200) }}
-                                        </p>
-
-                                        <a href="{{ route('news.show', $new->id) }}" class="read-more">
-                                            Learn More
-                                            <i class="flaticon-right-arrow"></i>
-                                        </a>
-                                    </div>
+                <div class="col-md-12">
+                    <h2 class="section-heading text-dark">Green Palace Oasis Co.,Ltd <span>Blog and News</span></h2>
+                    <h4>FOLLOW OUR INFOMATIVE BLOG ARTICLES </h4>
+                    <div class="konnect-space"></div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach ($news as $new)
+                    <div class="col-md-4 col-sm-6">
+                        <article>
+                            <div class="news-post">
+                                <div class="img-box">
+                                    <img src="{{ $new->photo }}" alt="" class="img-responsive img-fullwidth"
+                                        style="width: 100%; height: 320px; background-size: center; object-fit: cover;">
                                 </div>
-                                <hr style="border-top: 2px dotted green;">
+                                <div class="post-content-text">
+                                    <ul class="blog_info">
+                                        <li>
+                                            <i class="fa fa-user"></i>
+                                            {{ $new->author ?? '' }}
+                                        </li>
+                                    </ul>
+                                    <h5>
+                                        {{ $new->title_eng ?? '' }}
+                                    </h5>
+                                    <p>
+                                        {{ Str::limit($new->description_eng, 100) }}
+                                    </p>
+                                    <a class="konnect-button" href="{{ route('news.show', $new->id) }}">
+                                        read more
+                                    </a>
+                                </div>
                             </div>
-                        @endforeach
+                        </article>
                     </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="widget-sidebar">
-                        @include('layouts.shared.quick_links')
-                        @include('news.recents_news')
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
 @endsection
-
 @section('script')
 @endsection

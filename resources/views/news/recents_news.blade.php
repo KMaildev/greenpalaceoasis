@@ -2,14 +2,18 @@
     <h3 class="widget-title">Recent News</h3>
     <ul>
         @foreach ($recents_news as $recents_new)
-            <li>
+            <div class="latest-blog-single col-xs-12">
                 <a href="{{ route('news.show', $recents_new->id) }}">
-                    {{ $recents_new->title_eng ?? '' }}
-                    <img src="{{ $recents_new->photo }}" alt=""
-                        style="width: 25%; height: 50px; background-size: center; object-fit: cover;">
+                    <div class="latest-blog-single-img">
+                        <img src="{{ $recents_new->photo }}" alt="post-thumb">
+                    </div>
+                    <div class="latest-blog-single-info">
+                        <h4>
+                            {{ $recents_new->title_eng ?? '' }}
+                        </h4>
+                    </div>
                 </a>
-                
-            </li>
+            </div>
         @endforeach
     </ul>
 </div>

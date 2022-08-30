@@ -56,7 +56,7 @@
             </button>
             <!-- Logo -->
             <a class="navbar-brand page-scroll logo-color">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="logo" width="162">
+                <img src="{{ asset('data/company_data/logo.jpeg') }}" alt="logo" width="70">
             </a>
         </div>
 
@@ -173,7 +173,7 @@
 
                 <li>
                     <a href="{{ route('news.index') }}">
-                        News
+                        Blog
                     </a>
                 </li>
 
