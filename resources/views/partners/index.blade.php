@@ -1,52 +1,77 @@
 @extends('layouts.app')
 @section('title', 'Our Partners')
 @section('content')
-    <div class="page-title-area" style="background-image: url({{ asset('data/partner_bg.jpeg') }})">
+    <header class="innner-page">
         <div class="container">
-            <div class="page-title-content">
-                <h3 style="color: white">
-                    Our Partners
-                </h3>
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}" style="color: white">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active">
-                        Our Partners
-                    </li>
-                </ul>
-            </div>
+            <h1>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                OUR PARTNERS
+            </h1>
         </div>
-    </div>
+    </header>
 
-    <div class="partner-area bg-color" style="background-color: white;">
-        <br><br>
+    <section>
         <div class="container">
-            <div class="section-title">
-                <span>
-                    ROYAL GATE INTERNATIONAL CO.,LTD
-                </span>
-                <h2 style="text-shadow: 2px 2px gray; color: green;">
-                               OUR PARTNERS
-                            </h2>
-            </div>
-            <div class="">
-                <div class="row">
-                    <div class="partner-slider owl-carousel owl-theme">
-                        @foreach ($partners as $partner)
-                            <div class="partner-item">
-                                <img src="{{ $partner->company_logo }}" alt="Image"
-                                    style="width: 100%; height: 150px; object-fit: contain; background-size: contain; background-position: center; object-position: center">
-                            </div>
-                        @endforeach
-                    </div>
+            <div class="row">
+                <div class="col-sm-12 text-dark">
+                    <h2 class="section-heading text-dark">Apply for <span>Suitable Job</span></h2>
+                    <div class="konnect-space"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <hr>
+
+        <div class="container">
+            <div class="row">
+
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr style="background-color: #336a38; color: white;">
+                            <th scope="col">No</th>
+                            <th scope="col">City</th>
+                            <th scope="col">Company Name</th>
+                            <th scope="col">Number of Workers</th>
+                            <th scope="col">Logo</th>
+                            <th scope="col">Apply</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($categories as $i => $category)
+                            @php
+                                $city = $category->city;
+                            @endphp
+                            <tr>
+                                <td style="background-color: #ededed;">
+                                    {{ $i + 1 }}
+                                </td>
+                                <td colspan="7" style="background-color: #ededed;">
+                                    {{ $category->city ?? '' }}
+                                </td>
+                            </tr>
+
+                            @foreach ($partners as $key => $partner)
+                                @if ($city == $partner->city)
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td style="text-align: center;">
+                                            {{ $partner->company ?? '' }}
+                                        </td>
+                                        <td style="text-align: center;">
+                                            {{ $partner->number_of_workers ?? '' }}
+                                        </td>
+                                    </tr>
+                                @endif
+                            @endforeach
+                        @endforeach
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+
 @endsection
 @section('script')
 @endsection

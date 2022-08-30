@@ -2,92 +2,66 @@
 @section('title', 'Our Recruitment Services')
 @section('content')
 
-    <div class="page-title-area" style="background-image: url({{ asset('data/about_banner.jpeg') }})">
+    <header class="innner-page">
         <div class="container">
-            <div class="page-title-content">
-                <h3 style="color: white">
-                    Our Recruitment Services
-                </h3>
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}" style="color: white">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active">
-                        Our Recruitment Services
-                    </li>
-                </ul>
-            </div>
+            <h1>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                Our Services
+            </h1>
         </div>
-    </div>
+    </header>
 
     <section class="terms-conditions-area ptb-100">
         <div class="container">
             <div class="terms-conditions">
                 <div class="conditions-content">
                     <h2 style="text-shadow: 1px 2px gray; color:black;">
-                        Current Services
+                        Our Services
                     </h2>
-
                     <p>
-                        We specialized to employ skilled workers at service sector, manufacturing, duty free
-                        shop,hospitality, nursing and amusement park. Our workers have various good images in Middle East,
-                        UAE, Thailand, Malaysia and Singapore.
+                        We serve many companies and still work with good relationship. <br>
+                        We are take care to ensure discipline and mutual understanding between the team leader or HR
+                        Management and the workers in the workplace <br>
+                        During the covid-19 pandemic period, we are cooperate with employer to worker rules to follow the
+                        how to protect way.
                     </p>
                 </div>
 
 
                 <div class="conditions-content">
                     <h3 style="text-shadow: 1px 2px gray; color:black;">
-                        Transaction of Procession
+                        We serve to –
                     </h3>
                     <ul>
                         <li>
-                            Receiving of Job Offer from our overseas clients
+                            Electronic Factory
                         </li>
                         <li>
-                            Explanation of job offer and employment contract to candidates
+                            Furniture Factory
                         </li>
                         <li>
-                            Training the respected courses (such as: language, hospitality & others)
+                            Garment Factory
                         </li>
                         <li>
-                            Medical Check Up
+                            Plastic Industry
                         </li>
                         <li>
-                            Sending CV to employer or Interview as require
+                            Metal Industry
                         </li>
                         <li>
-                            Applying Visa to related embassy
+                            Restaurant
                         </li>
                         <li>
-                            Candidates attending Pre Departure Training at Labour Department
+                            Hotel Cleaner
                         </li>
                         <li>
-                            Arranging Air ticket and sending arrival details to employer
+                            Car Wash
                         </li>
                     </ul>
-                    <p>
-                        Royal Gate sending candidate to Yangon International Airport
-                    </p>
-                </div>
-
-                <div class="conditions-content">
-                    <h2 style="text-shadow: 1px 2px gray; color:black;">
-                        Conclusion
-                    </h2>
-
-                    <p>
-                        Royal Gate is continually focused and recruits manpower to worldwide and enhances the human
-                        resources from normal to semi skill and semi skill workforce to professional. Thus, Royal Gate
-                        welcomes all employers, manufacturers and HR companies to cooperate with us at anytime.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
 @endsection
 @section('script')
 @endsection

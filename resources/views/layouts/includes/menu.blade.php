@@ -141,7 +141,7 @@
                                 Our Recruitment Services
                             </a>
                         </li>
-                        <li>
+                        <li hidden>
                             <a href="{{ route('milestones.index') }}" class="nav-link active">
                                 Milestones
                             </a>

@@ -1,60 +1,56 @@
 @extends('layouts.app')
 @section('title', 'JOBS IN OVERSEAS')
 @section('content')
-
-    <div class="page-title-area" style="background-image: url({{ asset('data/job_banner.jpeg') }})">
+    <header class="innner-page">
         <div class="container">
-            <div class="page-title-content">
-                <h2 style="color: white">
-                    JOBS IN OVERSEAS
-                </h2>
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}" style="color: white">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active" style="color: white">
-                        Jobs Available In {{ $country->country }}
-                    </li>
-                </ul>
+            <h1>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                JOBS IN OVERSEAS
+            </h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-dark">
+                    <h2 class="section-heading text-dark">Apply for <span>Suitable Job</span></h2>
+                    <h4>Jobs Available In {{ $country->country }}</h4>
+                    <div class="konnect-space"></div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <section class="live-jobs-area-two pb-70">
-        <br><br>
         <div class="container">
-            <div class="section-title green-title">
-                <!--<h2>Browse Job Category</h2>-->
-                <h2 style="text-shadow: 2px 2px gray; color: #1d3fd9;">
-                               JOBS CATEGORIES
-                            </h2>
-            </div>
-
             <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="row">
-                        @foreach ($jobs as $job)
-                            <div class="col-md-4 col-sm-12">
-                                <a href="{{ route('cv.index') }}">
-                                    <div class="alert alert-dismissible alert-primary">
-                                        <strong>
-                                            {{ $job->job_title ?? '' }}
-                                        </strong>
-                                    </div>
-                                </a>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
 
+                <table class="table table-hover">
+                    <thead>
+                        <tr style="background-color: #336a38; color: white;">
+                            <th scope="col">#</th>
+                            <th scope="col">Job Title</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">Apply</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($jobs as $key => $job)
+                            <tr>
+                                <td>
+                                    {{ $key + 1 }}
+                                </td>
+                                <td>{{ $job->job_title ?? '' }}</td>
+                                <td>{{ $job->country_table->country ?? '' }}</td>
+                                <td>
+                                    <a href="{{ route('cv.index') }}">Apply</a>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
-
-
-    <hr>
 @endsection
 @section('script')
 @endsection

@@ -2,25 +2,14 @@
 @section('title', 'Countries')
 @section('content')
 
-    <div class="page-title-area" style="background-image: url({{ asset('data/about_banner.jpeg') }})">
+    <header class="innner-page">
         <div class="container">
-            <div class="page-title-content">
-                <h3 style="color: white">
-                    Client Countries
-                </h3>
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}" style="color: white">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active">
-                        Our Services
-                    </li>
-                </ul>
-            </div>
+            <h1>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                Client Countries
+            </h1>
         </div>
-    </div>
+    </header>
 
 
     <section class="blog-area bg-color pb-70" style="background-color: white">
@@ -28,8 +17,8 @@
         <div class="container">
             <div class="section-title">
                 <h2 style="text-shadow: 2px 2px gray; color: #1d3fd9;">
-                                OUR SERVICES
-                            </h2>
+                    OUR SERVICES
+                </h2>
                 <span style="text-align: justify">
                     Apart from urgent vacancies large corporations growing companies have an eternal demand for talented
                     manpower to take their business to the higher level. In such cases we keep a continuous lookout for
@@ -57,7 +46,8 @@
 
                             <div class="blog-content">
                                 <h4>
-                                    <a href="{{ route('country.show', $countryie->id) }}" style="text-shadow: 1px 1px gray; color: green; font-size:15px;">
+                                    <a href="{{ route('country.show', $countryie->id) }}"
+                                        style="text-shadow: 1px 1px gray; color: green; font-size:15px;">
                                         {{ $countryie->country ?? '' }}
                                     </a>
                                 </h4>
@@ -72,8 +62,6 @@
             </div>
         </div>
     </section>
-
-    <hr>
 @endsection
 @section('script')
 @endsection

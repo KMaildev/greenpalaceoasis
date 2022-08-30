@@ -1,23 +1,14 @@
 @extends('layouts.app')
 @section('title', 'Submit CV')
 @section('content')
-    <div class="page-title-area">
+    <header class="innner-page">
         <div class="container">
-            <div class="page-title-content">
-                <h2>Application Form</h2>
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active">
-                        Application Form
-                    </li>
-                </ul>
-            </div>
+            <h1>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                Submit Your Application
+            </h1>
         </div>
-    </div>
+    </header>
 
     <section class="job-information-area ptb-100">
         <div class="container">
@@ -25,7 +16,8 @@
                 <h3 style="text-shadow: 1px 2px gray; color:black;">
                     EMPLOYER FORM
                 </h3>
-                <form autocomplete="off" method="POST" action="{{ route('employer.store') }}" id="create-form">
+                <form class="konnect-form" autocomplete="off" method="POST" action="{{ route('employer.store') }}"
+                    id="create-form">
                     @csrf
                     <div class="row">
                         <div class="col-md-12 mb-3">
@@ -246,9 +238,7 @@
 
                         <div class="col-lg-12">
                             <hr>
-                            <button class="default-btn" type="submit">
-                                Apply Now
-                            </button>
+                            <button type="submit" class="konnect-submit">Apply Now</button>
                         </div>
 
                     </div>

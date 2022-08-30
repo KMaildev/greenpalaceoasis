@@ -18,6 +18,11 @@
     <link href="{{ asset('assets/css/animate.css') }}" media="all" rel="stylesheet" type="text/css" />
     <!-- Main CSS -->
     <link href="{{ asset('assets/css/default.css') }}" rel="stylesheet">
+    <style>
+        .uk-text-danger {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
