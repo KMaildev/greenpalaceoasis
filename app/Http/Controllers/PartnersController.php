@@ -14,11 +14,8 @@ class PartnersController extends Controller
      */
     public function index()
     {
-        $categories = Partner::select('city')
-            ->groupBy('city')
-            ->get();
         $partners = Partner::all();
-        return view('partners.index', compact('partners', 'categories'));
+        return view('partners.index', compact('partners'));
     }
 
     /**

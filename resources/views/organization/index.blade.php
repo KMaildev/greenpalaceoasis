@@ -1,40 +1,28 @@
 @extends('layouts.app')
 @section('title', 'Our Organization Chart')
 @section('content')
-    <div class="page-title-area" style="background-image: url({{ asset('data/org_banner.jpeg') }})">
+    <header class="innner-page">
         <div class="container">
-            <div class="page-title-content">
-                <h3 style="color: white">
-                    Our Organization Chart
-                </h3>
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}" style="color: white">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active">
-                        Our Organization Chart
-                    </li>
-                </ul>
-            </div>
+            <h1>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                Our Organization Chart
+            </h1>
         </div>
-    </div>
+    </header>
 
-    <section class="who-we-are-page pt-100 pb-70">
+    <section class="konnect-team">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="who-we-are-img">
-                        <img src="{{ asset('data/org.png') }}" alt="Image">
+                        <center>
+                            <img src="{{ asset('data/org.png') }}" alt="Image">
+                        </center>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
 @endsection
-
-
 @section('script')
 @endsection

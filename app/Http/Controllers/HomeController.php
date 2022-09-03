@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Jobs;
 use App\Models\Activities;
+use App\Models\Country;
+use App\Models\News;
+use App\Models\Partner;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,7 +20,10 @@ class HomeController extends Controller
     {
         $jobs = Jobs::all();
         $activities = Activities::all();
-        return view('welcome', compact('jobs', 'activities'));
+        $countryies = Country::all();
+        $partners = Partner::all();
+        $news = News::all();
+        return view('welcome', compact('jobs', 'activities', 'countryies', 'partners', 'news'));
     }
 
     /**

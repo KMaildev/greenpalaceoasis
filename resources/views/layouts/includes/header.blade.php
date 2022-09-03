@@ -5,11 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <meta content="" name="Green Palace Oasis Co.,Ltd">
+    <meta name="keywords" content="Green Palace Oasis Co.,Ltd" />
+    <meta property="og:title" content="Green Palace Oasis Co.,Ltd" />
+    <meta property="og:image" content="{{ asset('data/company_data/logo.jpeg') }}" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Green Palace Oasis Co.,Ltd" />
+    <link rel="icon" type="image/png" href="{{ asset('data/company_data/logo.jpeg') }}">
     <!-- Title -->
-    <title>Green Palace Oasis </title>
+    <title>Green Palace Oasis Co.,Ltd </title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom icon Fonts -->

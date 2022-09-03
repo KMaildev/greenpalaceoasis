@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 10, 2022 at 06:25 PM
+-- Generation Time: Sep 03, 2022 at 12:26 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `royal_gate`
+-- Database: `greenpalaceoasismm`
 --
 
 -- --------------------------------------------------------
@@ -41,8 +41,9 @@ CREATE TABLE `activities` (
 --
 
 INSERT INTO `activities` (`id`, `title`, `description`, `photo`, `created_at`, `updated_at`) VALUES
-(1, 'Training for preparing before interview', 'အင်တာဗျူး မ၀င်ခင် ပြင်ဆင်​ပေးခြင်းtraining ​ပေး​ပေးစဥ်', 'https://recruitmentmyanmarsak.com/admin/uploads/files/3k0sgj4vx8i2m67.jpg,https://recruitmentmyanmarsak.com/admin/uploads/files/6ehzni9t71dqm2y.jpg,https://recruitmentmyanmarsak.com/admin/uploads/files/qt76bxne_l1mkw4.jpg,https://recruitmentmyanmarsak.com/admin/uploads/files/fjoadrpz465hcmk.jpg,https://recruitmentmyanmarsak.com/admin/uploads/files/aclhutd01v5of8n.jpg,https://recruitmentmyanmarsak.com/admin/uploads/files/jfhrcued8oxpm23.jpg', NULL, NULL),
-(2, 'ဘိုးဘွား​စောင့်​ရှောက်အတွက်လက်​ ​တွေ့သင်ကြား စဥ်', 'ဘိုးဘွား​စောင့်​ရှောက်အတွက်လက်​ ​တွေ့သင်ကြား စဥ်', 'https://recruitmentmyanmarsak.com/admin/uploads/files/8y2ketad0w9v473.jpg,https://recruitmentmyanmarsak.com/admin/uploads/files/s0erm4ith5aynb9.jpg,https://recruitmentmyanmarsak.com/admin/uploads/files/tzjrpc6na4fbg8y.jpg,https://recruitmentmyanmarsak.com/admin/uploads/files/7e38p_hanx6ukgl.jpg', NULL, NULL);
+(1, 'Activities', '-', 'http://royalgatecompany.com/admin/uploads/files/me9uidofz61_tqn.jpg,http://royalgatecompany.com/admin/uploads/files/wg2q0isu9dp6yjb.jpg,http://royalgatecompany.com/admin/uploads/files/5h0ykf_pmgbevdw.jpg,http://royalgatecompany.com/admin/uploads/files/nf71ap6_juzthme.jpg', NULL, NULL),
+(2, 'Activities ', 'Group Photo', 'http://royalgatecompany.com/admin/uploads/files/7bdoljxvcmks3ne.jpg,http://royalgatecompany.com/admin/uploads/files/nv4chxu6fek_p1w.jpg,http://royalgatecompany.com/admin/uploads/files/cwoqgj7ldnmitbp.jpg,http://royalgatecompany.com/admin/uploads/files/fedy01nr53vps82.jpg', NULL, NULL),
+(3, 'Activities', '-', 'http://royalgatecompany.com/admin/uploads/files/muigvoqr_7djp1x.jpg,http://royalgatecompany.com/admin/uploads/files/yvlxk0fzgbarep9.jpg,http://royalgatecompany.com/admin/uploads/files/p2nrlg6q53ufa0x.jpg,http://royalgatecompany.com/admin/uploads/files/6patdmjus7k_h4y.jpg,http://royalgatecompany.com/admin/uploads/files/st9ka8w15z0qnxy.jpg,http://royalgatecompany.com/admin/uploads/files/nrwfg3bdhoqmj1p.jpg', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -66,10 +67,7 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `name`, `email`, `phone`, `subject`, `message`, `created_at`, `updated_at`) VALUES
-(1, NULL, NULL, NULL, NULL, NULL, '2022-07-05 10:50:56', '2022-07-05 10:50:56'),
-(2, 'asdf', 'asdf@gmail.com', 'asdf', 'asdfas', 'df', '2022-07-05 10:51:15', '2022-07-05 10:51:15'),
-(3, NULL, NULL, NULL, NULL, NULL, '2022-07-05 10:52:40', '2022-07-05 10:52:40'),
-(4, 'Mg Mg', 'mgmg@gmail.com', '0944416176', 'Hello', 'Hello aasdf', '2022-07-05 11:16:52', '2022-07-05 11:16:52');
+(1, 'Mg Mg', 'mk@gmail.com', '09876543212', 'jklk', 'kjl', '2022-08-30 05:35:11', '2022-08-30 05:35:11');
 
 -- --------------------------------------------------------
 
@@ -90,10 +88,10 @@ CREATE TABLE `countries` (
 --
 
 INSERT INTO `countries` (`id`, `country`, `photo`, `created_at`, `updated_at`) VALUES
-(1, 'Japan', 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png', NULL, NULL),
-(2, 'Singapore', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/1200px-Flag_of_Singapore.svg.png', NULL, NULL),
-(3, 'Malaysia', 'https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_500/https://www.argc.biz/wp-content/uploads/2019/03/Malaysia.jpg.webp', NULL, NULL),
-(4, 'Thailand', 'https://c4.wallpaperflare.com/wallpaper/698/202/493/thailand-flag-national-symbol-thailand-large-flag-flag-of-thailand-hd-wallpaper-preview.jpg', NULL, NULL);
+(1, 'Japan', 'http://royalgatecompany.com/admin/uploads/files/adqp0m_u3nkt27v.png', NULL, NULL),
+(2, 'Singapore', 'http://royalgatecompany.com/admin/uploads/files/1hsnbfumlw6gva0.png', NULL, NULL),
+(3, 'Malaysia', 'http://royalgatecompany.com/admin/uploads/files/ub_vahxdq1fmnw3.jpeg', NULL, NULL),
+(4, 'Thailand', 'http://royalgatecompany.com/admin/uploads/files/29imo5rwaqlehxj.jpeg', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -115,14 +113,6 @@ CREATE TABLE `cvs` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `cvs`
---
-
-INSERT INTO `cvs` (`id`, `name`, `email`, `phone`, `country`, `gender`, `current_address`, `additional_note`, `attachment_file`, `path`, `created_at`, `updated_at`) VALUES
-(1, 'Mg Mg', 'mgmg@gmail.com', '09444161997', 'Japan', 'Male', 'Yangon', 'No', 'sample.pdf', 'http://localhost/projects/royal_gate/storage/cv/ZIU59wP6Y7hTdNRtV4H8gO4n9Ul0NOQKeICRgMIo.pdf', '2022-07-05 13:09:11', '2022-07-05 13:09:11'),
-(2, 'Mg Mg Soe', NULL, '09444171665', 'Japan', 'Male', 'Yangon', NULL, 'sample.pdf', 'http://localhost/projects/royal_gate/storage/cv/Vx37l7cDR31bylNT9uNhg5BeUXbMiRj54NBgBOKg.pdf', '2022-07-05 13:12:12', '2022-07-05 13:12:12');
 
 -- --------------------------------------------------------
 
@@ -151,14 +141,6 @@ CREATE TABLE `employers` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `employers`
---
-
-INSERT INTO `employers` (`id`, `company_name`, `type_of_company`, `location`, `website`, `phone`, `email`, `job_category`, `age_limit`, `educational_requirement`, `working_experience_requirement`, `other_additional_requirement`, `estimate_salary_offer`, `other_allowance`, `gender`, `interview_type`, `date`, `created_at`, `updated_at`) VALUES
-(1, 'sadf', NULL, 'asdf', NULL, 'asf', 'asfd@gmail.com', 'asdf', 'asdf', 'asdfas', 'dfa', 'sdfasd', 'f', 'sadf', 'asdf', 'asdf', '2022-07-05', '2022-07-05 13:41:15', '2022-07-05 13:41:15'),
-(2, 'asdf', 'asdf', 'asdf', 'asdf', 'asd', 'asd@gmail.com', 'asdf', 'sadfa', 'dsf', 'adsf', 'sadf', 'asdf', 'asdf', 'asdf', 'adsf', '2022-07-05', '2022-07-05 13:42:07', '2022-07-05 13:42:07');
 
 -- --------------------------------------------------------
 
@@ -231,7 +213,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2022_07_08_180102_create_activities_table', 6),
 (9, '2022_07_08_183644_create_teams_table', 7),
 (10, '2022_07_09_103011_create_partners_table', 8),
-(11, '2022_07_10_083306_create_jobs_table', 9);
+(11, '2022_07_10_083306_create_jobs_table', 9),
+(12, '2022_08_30_172859_add_city_workers_to_partners_table', 10);
 
 -- --------------------------------------------------------
 
@@ -256,9 +239,8 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title_eng`, `title_jp`, `description_eng`, `description_jp`, `author`, `photo`, `created_at`, `updated_at`) VALUES
-(1, 'JOB INTERVIEW TIPS 1', 'JOB INTERVIEW TIPS', 'There are a lot of elements that interest me about this role from the job description, but one of the key elements that really appealed to me is that I feel I would be a great fit within the company culture. I want to work in a progressive team and the collaborative of this company is something that interested me in this job. Looking over the company website, and from our previous discussions, I believe this role would also give me the ability to progress in my career and develop my skills in a lot of different areas such as ‘X, Y, Z’. I feel there would be a lot of opportunities for me to grow in my role and further my knowledge in ‘X’ and progress my career.', 'There are a lot of elements that interest me about this role from the job description, but one of the key elements that really appealed to me is that I feel I would be a great fit within the company culture. I want to work in a progressive team and the collaborative of this company is something that interested me in this job. Looking over the company website, and from our previous discussions, I believe this role would also give me the ability to progress in my career and develop my skills in a lot of different areas such as ‘X, Y, Z’. I feel there would be a lot of opportunities for me to grow in my role and further my knowledge in ‘X’ and progress my career.', 'Admin', 'https://recruitmentmyanmarsak.com/admin/uploads/files/zp_x7oqr40fkmie.png', '2022-05-25 07:46:08', NULL),
-(2, 'JOB INTERVIEW TIPS 2', 'JOB INTERVIEW TIPS', 'There are a lot of elements that interest me about this role from the job description, but one of the key elements that really appealed to me is that I feel I would be a great fit within the company culture. I want to work in a progressive team and the collaborative of this company is something that interested me in this job. Looking over the company website, and from our previous discussions, I believe this role would also give me the ability to progress in my career and develop my skills in a lot of different areas such as ‘X, Y, Z’. I feel there would be a lot of opportunities for me to grow in my role and further my knowledge in ‘X’ and progress my career.', 'There are a lot of elements that interest me about this role from the job description, but one of the key elements that really appealed to me is that I feel I would be a great fit within the company culture. I want to work in a progressive team and the collaborative of this company is something that interested me in this job. Looking over the company website, and from our previous discussions, I believe this role would also give me the ability to progress in my career and develop my skills in a lot of different areas such as ‘X, Y, Z’. I feel there would be a lot of opportunities for me to grow in my role and further my knowledge in ‘X’ and progress my career.', 'Admin', 'https://recruitmentmyanmarsak.com/admin/uploads/files/v3bgmik8raeo96w.jpg', '2022-05-25 07:46:08', NULL),
-(3, 'JOB INTERVIEW TIPS 3', 'JOB INTERVIEW TIPS', 'There are a lot of elements that interest me about this role from the job description, but one of the key elements that really appealed to me is that I feel I would be a great fit within the company culture. I want to work in a progressive team and the collaborative of this company is something that interested me in this job. Looking over the company website, and from our previous discussions, I believe this role would also give me the ability to progress in my career and develop my skills in a lot of different areas such as ‘X, Y, Z’. I feel there would be a lot of opportunities for me to grow in my role and further my knowledge in ‘X’ and progress my career.', 'There are a lot of elements that interest me about this role from the job description, but one of the key elements that really appealed to me is that I feel I would be a great fit within the company culture. I want to work in a progressive team and the collaborative of this company is something that interested me in this job. Looking over the company website, and from our previous discussions, I believe this role would also give me the ability to progress in my career and develop my skills in a lot of different areas such as ‘X, Y, Z’. I feel there would be a lot of opportunities for me to grow in my role and further my knowledge in ‘X’ and progress my career.', 'Admin', 'https://recruitmentmyanmarsak.com/admin/uploads/files/ovlcd1zkm34xf6_.jpg', '2022-05-25 07:46:08', NULL);
+(1, 'JOB INTERVIEW TIPS', NULL, 'There are a lot of elements that interest me about this role from the job description, but one of the key elements that really appealed to me is that I feel I would be a great fit within the company culture. I want to work in a progressive team and the collaborative of this company is something that interested me in this job. Looking over the company website, and from our previous discussions, I believe this role would also give me the ability to progress in my career and develop my skills in a lot of different areas such as ‘X, Y, Z’. I feel there would be a lot of opportunities for me to grow in my role and further my knowledge in ‘X’ and progress my career.', NULL, 'Admin', 'http://royalgatecompany.com/admin/uploads/files/hq3vaw_znboympt.png', NULL, NULL),
+(2, 'JOB INTERVIEW TIPS', NULL, 'There are a lot of elements that interest me about this role from the job description, but one of the key elements that really appealed to me is that I feel I would be a great fit within the company culture. I want to work in a progressive team and the collaborative of this company is something that interested me in this job. Looking over the company website, and from our previous discussions, I believe this role would also give me the ability to progress in my career and develop my skills in a lot of different areas such as ‘X, Y, Z’. I feel there would be a lot of opportunities for me to grow in my role and further my knowledge in ‘X’ and progress my career.', NULL, 'Admin', 'http://royalgatecompany.com/admin/uploads/files/hq3vaw_znboympt.png', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -271,18 +253,19 @@ CREATE TABLE `partners` (
   `company` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `company_logo` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `city` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `number_of_workers` text COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `partners`
 --
 
-INSERT INTO `partners` (`id`, `company`, `company_logo`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'http://actionmanpower.com/admin/uploads/files/j7h9rgilbdz1keu.png', NULL, NULL),
-(2, NULL, 'http://actionmanpower.com/admin/uploads/files/umzla2jqfcid_x3.png', NULL, NULL),
-(3, NULL, 'http://actionmanpower.com/admin/uploads/files/hk91cb7pdfvu0_6.png', NULL, NULL),
-(4, NULL, 'https://actionmanpower.com/admin/uploads/files/d8t1wz7_jbfms3i.png', NULL, NULL);
+INSERT INTO `partners` (`id`, `company`, `company_logo`, `created_at`, `updated_at`, `city`, `number_of_workers`) VALUES
+(1, 'Seafresh Industry Public Co., Ltd', 'http://royalgatecompany.com/admin/uploads/files/dvfci1yqpjoh2a0.PNG', NULL, NULL, 'Kuala Lumpur', '60'),
+(2, 'Top Glove (Medical) Co., Ltd', 'http://royalgatecompany.com/admin/uploads/files/mz8dayswpe_oh6l.png', NULL, NULL, 'Kuala Lumpur', '35'),
+(3, 'TMCL Management Co., Ltd', 'http://royalgatecompany.com/admin/uploads/files/vsldyexujmaftzq.JPG', NULL, NULL, 'Kuala Lumpur', '33');
 
 -- --------------------------------------------------------
 
@@ -304,8 +287,8 @@ CREATE TABLE `teams` (
 --
 
 INSERT INTO `teams` (`id`, `name`, `position`, `photo`, `created_at`, `updated_at`) VALUES
-(1, 'DAW SU SU MON', 'Managing Director', 'https://recruitmentmyanmarsak.com/admin/uploads/files/xsibzf3n0yogm98.jpg', NULL, NULL),
-(2, 'Mg Mg', 'Director', 'https://recruitmentmyanmarsak.com/admin/uploads/files/evxg2pn6_04a9js.jpg', NULL, NULL);
+(1, 'U Mg Mg', 'Managing Director', 'http://royalgatecompany.com/admin/uploads/files/2d1ylqup4tzb0ca.jpg', NULL, NULL),
+(2, 'U Mg Soe', 'Director', 'http://royalgatecompany.com/admin/uploads/files/m9sg6_rt1hvy7je.png', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -318,11 +301,23 @@ CREATE TABLE `users` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `login_session_key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email_status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `password_expire_date` datetime DEFAULT '2022-10-10 00:00:00',
+  `password_reset_key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `login_session_key`, `email_status`, `password_expire_date`, `password_reset_key`) VALUES
+(1, 'admin', 'admin@gmail.com', NULL, '$2y$10$2ZWdvNOKIFUzreik1Ha6NutwR8FDC4STu/ZJOizGfOe.Uyrc18Wl.', NULL, NULL, NULL, '7f139539c6e2e8b0d936e1ce05370b48', NULL, '2022-07-30 04:12:55', '93fe24f956541f358ddca54f4c2d17fb'),
+(2, 'May', 'may@gmail.com', NULL, '$2y$10$vsjehecq3QsZly5gVvEMgu86OHQg8gwGm/rwxkkDAhB/S.Nd5oBEa', NULL, NULL, NULL, NULL, NULL, '2022-10-10 00:00:00', NULL);
 
 --
 -- Indexes for dumped tables
@@ -409,13 +404,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `countries`
@@ -427,13 +422,13 @@ ALTER TABLE `countries`
 -- AUTO_INCREMENT for table `cvs`
 --
 ALTER TABLE `cvs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `employers`
 --
 ALTER TABLE `employers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -451,19 +446,19 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `partners`
 --
 ALTER TABLE `partners`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `teams`
@@ -475,7 +470,7 @@ ALTER TABLE `teams`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

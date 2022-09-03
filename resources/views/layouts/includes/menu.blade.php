@@ -12,8 +12,14 @@
                     </li>
                     <li class="li-last">
                         <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                        <a href="tel:(040) 123-4567">
-                            (040) 123-4567
+                        <a href="tel:09 779000 464">
+                            09 779000 464
+                        </a>
+                    </li>
+                    <li class="li-last">
+                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                        <a href="tel:09 780 80 9393">
+                            09 780 80 9393
                         </a>
                     </li>
                 </ul>
@@ -55,7 +61,7 @@
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
             <!-- Logo -->
-            <a class="navbar-brand page-scroll logo-color">
+            <a class="navbar-brand page-scroll logo-color" href="{{ route('home') }}">
                 <img src="{{ asset('data/company_data/logo.jpeg') }}" alt="logo" width="70">
             </a>
         </div>
@@ -64,14 +70,14 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
 
-                <li class="active">
+                <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
                     <a href="{{ route('home') }}">
                         Home
                     </a>
                 </li>
 
 
-                <li>
+                <li class="{{ request()->routeIs('about.index') ? 'active' : '' }}">
                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                         About Us
                         <i class="fa fa-angle-double-down" aria-hidden="true"></i>
@@ -90,7 +96,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li hidden>
                             <a href="{{ route('statement.index') }}" class="nav-link active">
                                 Vision & Mission
                             </a>
@@ -124,7 +130,7 @@
                 </li>
 
 
-                <li>
+                <li class="{{ request()->routeIs('country.index') ? 'active' : '' }}">
                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                         Manpower Services
                         <i class="fa fa-angle-double-down" aria-hidden="true"></i>
@@ -150,7 +156,7 @@
                 </li>
 
 
-                <li>
+                <li class="{{ request()->routeIs('cv.index') ? 'active' : '' }}">
                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                         Application
                         <i class="fa fa-angle-double-down" aria-hidden="true"></i>
@@ -171,20 +177,20 @@
                 </li>
 
 
-                <li>
+                <li class="{{ request()->routeIs('news.index') ? 'active' : '' }}">
                     <a href="{{ route('news.index') }}">
                         Blog
                     </a>
                 </li>
 
-                <li>
+                <li class="{{ request()->routeIs('activities.index') ? 'active' : '' }}">
                     <a href="{{ route('activities.index') }}">
                         Activities
                     </a>
                 </li>
 
 
-                <li>
+                <li class="{{ request()->routeIs('contact.index') ? 'active' : '' }}">
                     <a href="{{ route('contact.index') }}">
                         Contact Us
                     </a>

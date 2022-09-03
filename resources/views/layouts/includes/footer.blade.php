@@ -5,7 +5,7 @@
             <div class="col-12 text-center text-white">
                 <h3 class="margin-0">
                     Want to Get in Touch with us
-                    <a href="#" class="konnect-button-3">
+                    <a href="{{ route('contact.index') }}" class="konnect-button-3">
                         Submit Your Query
                     </a>
                 </h3>
@@ -21,31 +21,48 @@
             <div class="col-md-3 col-sm-6 footer-box">
                 <img src="{{ asset('assets/img/icons/building.png') }}" alt="icon" class="konnect-contact-icon">
                 <h3>About <span class="color-default">Us</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p style="text-align: justify">
+                    GREEN PALACE OASIS Co., Ltd. has been operation 18.12.2015.
+                </p>
             </div>
 
             <!-- Address-->
             <div class="col-md-3 col-sm-6 footer-box">
                 <img src="{{ asset('assets/img/icons/location.png') }}" alt="icon" class="konnect-contact-icon">
                 <h3>Our <span class="color-default">Location</span></h3>
-                <p>#Koramangala, Banglore<br>
-                    Karnataka, INDIA</p>
+                <p>
+                    No.236, 3rd floor, 39<sup>th</sup> Street (Upper Block), Kyaukatada T/S. Yangon
+                </p>
             </div>
 
             <!--     Phone Numbers-->
             <div class="col-md-3 col-sm-6 footer-box">
                 <img src="{{ asset('assets/img/icons/phone.png') }}" alt="icon" class="konnect-contact-icon">
                 <h3>Phone <span class="color-default">Contact</span></h3>
-                <p>+91 123-456789<br>
-                    +91 123-456780</p>
+                <p>
+                    <a href="tel:09 780 80 9393">
+                        09 780 80 9393
+                    </a>
+                    <br>
+                    <a href="tel:09 779000 464">
+                        09 779000 464
+                    </a>
+                </p>
             </div>
 
             <!-- Email Details -->
             <div class="col-md-3 col-sm-6 footer-box">
                 <img src="{{ asset('assets/img/icons/email.png') }}" alt="icon" class="konnect-contact-icon">
                 <h3>Email <span class="color-default">Us</span></h3>
-                <p>info@konnectplugins.com<br>
-                    sales@konnectplugins.com</p>
+                <p>
+                    <a href="mailto:info@greenpalaceoasismm.com">
+                        info@greenpalaceoasismm.com
+                    </a>
+                    <br>
+                    <a href="mailto:admin@greenpalaceoasismm.com">
+                        admin@greenpalaceoasismm.com
+                    </a>
+                </p>
             </div>
         </div>
     </div>
@@ -58,16 +75,29 @@
 
                 <!--Footer Social Icons-->
                 <div class="contact-social">
-                    <p><a href="#"> <i class="fa fa-twitter"></i> </a> <a href="#"> <i
-                                class="fa fa-facebook"></i> </a> <a href="#"> <i class="fa fa-google-plus"></i>
-                        </a> <a href="#"> <i class="fa fa-rss"></i>
-                        </a> <a href="#"> <i class="fa fa-instagram"></i> </a></p>
+                    <p>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </p>
                 </div>
             </div>
 
             <!-- Footer Copy rights-->
             <div class="col-sm-6 text-right">
-                <p> &copy; Copyright 2016 Konnect plugins </p>
+                <p> &copy; Copyright {{ now()->year }} Green Palace Oasis Co.,Ltd </p>
             </div>
         </div>
     </div>

@@ -23,26 +23,34 @@
 
         <div class="container">
             <div class="row">
-
                 <table class="table table-hover">
                     <thead>
                         <tr style="background-color: #336a38; color: white;">
-                            <th scope="col">#</th>
-                            <th scope="col">Job Title</th>
-                            <th scope="col">Country</th>
-                            <th scope="col">Apply</th>
+                            <th scope="col" style="width: 1%;">#</th>
+                            <th scope="col" style="width: 20%;">Job Title</th>
+                            <th scope="col" style="width: 10%;">Country</th>
+                            <th scope="col" style="width: 10%;">Apply</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($jobs as $key => $job)
                             <tr>
-                                <td>
+                                <td style="background-color: #70ca78; color: black; text-align: center;">
                                     {{ $key + 1 }}
                                 </td>
-                                <td>{{ $job->job_title ?? '' }}</td>
-                                <td>{{ $job->country_table->country ?? '' }}</td>
-                                <td>
-                                    <a href="{{ route('cv.index') }}">Apply</a>
+                                <td style="background-color: #9deaa3; color: black; text-align: center;">
+                                    {{ $job->job_title ?? '' }}
+                                </td>
+                                <td style="background-color: #d4f7d7; color: black; text-align: center;">
+                                    {{ $job->country_table->country ?? '' }}
+                                </td>
+                                <td style="background-color: #eff2f0; color: black; text-align: center;">
+                                    <a href="{{ route('cv.index') }}">
+                                        Apply Now /
+                                    </a>
+                                    <a href="{{ route('contact.index') }}">
+                                        Contact Us
+                                    </a>
                                 </td>
                             </tr>
                         @endforeach

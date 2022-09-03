@@ -1,78 +1,39 @@
 @extends('layouts.app')
 @section('title', 'Our Team')
 @section('content')
-    <div class="page-title-area" style="background-image: url({{ asset('data/activities_banner1.jpg') }})">
+    <header class="innner-page">
         <div class="container">
-            <div class="page-title-content">
-                <h3 style="color: black">Our Team</h3>
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}" style="color: black">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active">
-                        Our Team
-                    </li>
-                </ul>
-            </div>
+            <h1>
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                Management Team
+            </h1>
         </div>
-    </div>
+    </header>
 
-    <section class="freelancer-area pt-100 pb-70">
+    <section class="konnect-team">
         <div class="container">
-            <div class="section-title">
-                <span >ROYAL GATE INTERNATIONAL CO.,LTD</span>
-                
-                 <h2 style="text-shadow: 2px 2px gray; color: #1d3fd9;">
-                               OUR TEAM
-                            </h2>
-            </div>
-
             <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-dark">Team of <span>Green Palace Oasis Co.,Ltd</span></h2>
+                    <div class="konnect-space"></div>
+                </div>
+
                 @foreach ($teams as $team)
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-freelancer">
+                    <div class="col-md-3 col-sm-6 konnect-team-member">
+                        <div class="text-center" style="background-color: #336A38;">
                             <img src="{{ $team->photo }}" alt="Royal Gate"
-                                style="width: 100%; height: 230px; border-radius: 50%; object-fit: cover; background-size: contain; background-position: top; object-position: center">
-                            <h3>
+                                style="width: 100%; height: 230px; object-fit: cover; background-size: contain; background-position: top; object-position: center">
+                            <br>
+                            <h4 class="team-member-title" style="color: white;">
                                 {{ $team->name }}
-                            </h3>
-                            <ul>
-                                <li>
-                                    <i class="bx bxs-star"></i>
-                                </li>
-                                <li>
-                                    <i class="bx bxs-star"></i>
-                                </li>
-                                <li>
-                                    <i class="bx bxs-star"></i>
-                                </li>
-                                <li>
-                                    <i class="bx bxs-star"></i>
-                                </li>
-                                <li>
-                                    <i class="bx bxs-star"></i>
-                                </li>
-                            </ul>
-                            <a href="#" class="default-btn" style="width: 100%">
+                            </h4>
+                            <h5 style="color: white;">
                                 {{ $team->position }}
-                            </a>
+                            </h5>
+                            <br>
                         </div>
                     </div>
                 @endforeach
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-lg-6">
-                    <img src="{{ asset('data/team1.jpg') }}" alt="Royal Gate"
-                        style="border: 2px solid blue; width: 100%; height: 300px; object-fit: cover; background-size: contain; background-position: top; object-position: center">
-                </div>
-
-                <div class="col-md-6 col-sm-12 col-lg-6">
-                    <img src="{{ asset('data/team2.jpg') }}" alt="Royal Gate"
-                        style="border: 2px solid blue; width: 100%; height: 300px; object-fit: cover; background-size: contain; background-position: top; object-position: center">
-                </div>
             </div>
         </div>
     </section>

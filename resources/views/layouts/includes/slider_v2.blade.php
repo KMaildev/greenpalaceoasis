@@ -254,7 +254,9 @@
             /*#endregion responsive code end*/
         };
     </script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic"
+        rel="stylesheet" type="text/css" />
     <style>
         /* jssor slider loading skin spin css */
         .jssorl-009-spin img {
@@ -350,32 +352,36 @@
                 <stop offset="1" stop-color="#000"></stop>
             </radialGradient>
             <mask id="jssor_1_msk_3">
-                <path fill="url(#jssor_1_grd_2)" d="M600,0L600,400L0,400L0,0Z" x="0" y="0" style="position:absolute;overflow:visible;"></path>
+                <path fill="url(#jssor_1_grd_2)" d="M600,0L600,400L0,400L0,0Z" x="0" y="0"
+                    style="position:absolute;overflow:visible;"></path>
             </mask>
         </defs>
     </svg>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;visibility:hidden;">
+    <div id="jssor_1"
+        style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
 
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;">
+        <div data-u="slides"
+            style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;">
+
             <div>
-                <img data-u="image" data-src="{{ asset('slider/photo/235.jpg') }}" />
+                <img data-u="image" data-src="{{ asset('data/slider/3.jpeg') }}" />
             </div>
 
             <div>
-                <img data-u="image" data-src="{{ asset('slider/photo/1.jpeg') }}" />
+                <img data-u="image" data-src="{{ asset('data/slider/1.webp') }}" />
             </div>
 
             <div>
-                <img data-u="image" data-src="{{ asset('slider/photo/340.jpg') }}" />
+                <img data-u="image" data-src="{{ asset('data/slider/2.jpeg') }}" />
             </div>
-
 
         </div>
 
         <a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
         <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb132" style="position:absolute;bottom:24px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+        <div data-u="navigator" class="jssorb132" style="position:absolute;bottom:24px;right:16px;" data-autocenter="1"
+            data-scale="0.5" data-scale-bottom="0.75">
             <div data-u="prototype" class="i" style="width:12px;height:12px;">
                 <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                     <circle class="b" cx="8000" cy="8000" r="5800"></circle>
@@ -383,12 +389,14 @@
             </div>
         </div>
         <!-- Arrow Navigator -->
-        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2"
+            data-scale="0.75" data-scale-left="0.75">
             <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                 <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
             </svg>
         </div>
-        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;"
+            data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
             <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                 <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
             </svg>

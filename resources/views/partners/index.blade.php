@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-dark">
-                    <h2 class="section-heading text-dark">Apply for <span>Suitable Job</span></h2>
+                    <h2 class="section-heading text-dark">Our Value <span>Partners</span></h2>
                     <div class="konnect-space"></div>
                 </div>
             </div>
@@ -22,56 +22,46 @@
 
         <div class="container">
             <div class="row">
-
-
                 <table class="table table-hover">
                     <thead>
                         <tr style="background-color: #336a38; color: white;">
-                            <th scope="col">No</th>
-                            <th scope="col">City</th>
-                            <th scope="col">Company Name</th>
-                            <th scope="col">Number of Workers</th>
-                            <th scope="col">Logo</th>
-                            <th scope="col">Apply</th>
+                            <th scope="col" style="text-align: center; width: 2%;">No</th>
+                            <th scope="col" style="text-align: center; width: 20%;">City</th>
+                            <th scope="col" style="text-align: center; width: 20%;">Company Name</th>
+                            <th scope="col" style="text-align: center; width: 20%;">Number of Workers</th>
+                            <th scope="col" style="text-align: center; width: 20%;">Company Logo</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($categories as $i => $category)
-                            @php
-                                $city = $category->city;
-                            @endphp
+                        @foreach ($partners as $key => $partner)
                             <tr>
-                                <td style="background-color: #ededed;">
-                                    {{ $i + 1 }}
+                                <td style="background-color: #9deaa3; color: black; text-align: center;">
+                                    {{ $key + 1 }}
                                 </td>
-                                <td colspan="7" style="background-color: #ededed;">
-                                    {{ $category->city ?? '' }}
+
+                                <td style="background-color: #9deaa3; color: black; text-align: center;">
+                                    {{ $partner->city ?? '' }}
+                                </td>
+
+                                <td style="background-color: #9deaa3; color: black; text-align: center;">
+                                    {{ $partner->company ?? '' }}
+                                </td>
+
+                                <td style="background-color: #9deaa3; color: black; text-align: center;">
+                                    {{ $partner->number_of_workers ?? '' }}
+                                </td>
+
+                                <td style="background-color: #9deaa3; color: black; text-align: center;">
+                                    <img data-enlargeable="" src="{{ $partner->company_logo ?? '' }}" alt=""
+                                        style="width: 30%; height: 50px; background-size: center; object-fit: cover;">
                                 </td>
                             </tr>
-
-                            @foreach ($partners as $key => $partner)
-                                @if ($city == $partner->city)
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td style="text-align: center;">
-                                            {{ $partner->company ?? '' }}
-                                        </td>
-                                        <td style="text-align: center;">
-                                            {{ $partner->number_of_workers ?? '' }}
-                                        </td>
-                                    </tr>
-                                @endif
-                            @endforeach
                         @endforeach
                     </tbody>
                 </table>
-
             </div>
         </div>
     </section>
-
-
 @endsection
 @section('script')
 @endsection

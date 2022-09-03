@@ -84,14 +84,10 @@
                     <div class="col-12 contact-address-box">
                         <h3>Contact Information</h3>
                         <br>
-                        <p>
-                            <i class="fa fa-street-view" aria-hidden="true"></i>
-                            No (249) First Floor(Left). Top of 40 Street.
-                        </p>
 
                         <p>
                             <i class="fa fa-street-view" aria-hidden="true"></i>
-                            No (249) First Floor(Left). Top of 40 Street.
+                            No.236, 3rd floor, 39<sup>th</sup> Street (Upper Block), Kyaukatada T/S. Yangon
                         </p>
 
                         <p>
